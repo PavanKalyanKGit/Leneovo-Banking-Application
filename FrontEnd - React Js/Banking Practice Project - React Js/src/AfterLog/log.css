@@ -1,0 +1,870 @@
+/* General Body Styles */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    background-color: #a19c9c; 
+    color: #2b2929; 
+  }
+  
+  .dashboard_Comp {
+    padding: 40px;
+    margin-top: -60px;
+    background-color: #ffffff; 
+    min-height: 100vh;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  */
+
+  }
+  .p-dialog-header-icon.p-dialog-header-close.p-link
+  {
+     background-color: transparent;
+     color: black;
+     width: auto;
+  }
+  .Dialog, .DialogBox
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .Dialog label
+  {
+    color: #0065a0;
+    font-size: large;
+    font-weight: bold;
+  }
+  
+  .Dialog input[type='submit']
+  {
+    width: auto;
+  }
+  .Dialog h2
+  {
+    color: #0065a0;
+  }
+  img {
+    width: 100%
+  }
+  
+  form input{
+    width: auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    text-align: center;
+    color: #023655 ;
+  }
+  /* form{
+        box-shadow: 0px 2px 4px #00b4d8
+
+  } */
+  input:focus {
+    outline: none;
+    border-color: #00b4d8;
+  }
+  .loanDetails { 
+    transition: opacity 0.5s ease, max-height 0.5s ease;
+  }
+
+  
+  
+  .greeting  {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    
+  }
+  .ButtonsCallsParent
+  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 30px;
+    justify-content: space-evenly;
+  }
+  .ButtonsCalls .button
+  {
+    width: auto;
+    background-color: #00b4d8;
+    border-radius: 5px;
+  }
+  .ButtonsCalls .buttonTrue
+  {
+    background-color: white;
+    border: 1px solid #00b4d8;
+    color: #0065a0;
+    width: auto;
+    border-radius: 4px;
+  }
+  .ButtonsCalls .button:hover
+  {
+    background-color: #0065a0;
+  }
+  .p-button.p-component
+  {
+    background-color: #00b4d8;
+    width: auto;
+  }
+  .Balance
+  {
+    color: #00b4d8 ;
+    font-size: large; 
+  }
+  .Balance:hover
+  {    cursor: pointer;
+    padding: 2px 4px;
+    border-radius: 3px;
+    color: white;
+    background-color: #0065a0;
+    font-size: medium;
+  }
+  .BasicInfo .name {
+    color: #00b4d8;
+    text-align: end;
+    font-size: large; 
+  }
+  .BasicInfo .name span{
+    color: #0065a0;
+    font-size: large; 
+
+  }
+  
+  .accountBalance {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .accountBalance h3 {
+    font-size: 2rem;
+    color: #00b4d8; 
+    font-weight: 500;
+  }
+  
+  .dashboardActions {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+  h2 span
+  {
+    color: #0065a0;
+  }
+  .addMoneyButton,
+  .transferFundsButton {
+    background-color: #00b4d8; 
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  }
+  
+  .addMoneyButton:hover,
+  .transferFundsButton:hover {
+    background-color: #0065a0;
+    transform: scale(1.05);
+  }
+  
+  .footerLinks {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+  }
+
+
+  .security-warning {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #ca233f;
+    width: 100%;
+    max-width: 750px;
+    color: #ca233f;
+    margin: 0 auto;
+    position: relative;
+    top: 30px;
+    text-align: start;
+
+  }
+  .security-warning h3 {
+    font-size: x-large;
+    color: #ca233f;
+  }
+
+  .security-warning li
+  {
+    font-size: large;
+    color: #ca233f;
+  }
+  
+  .security-warning p {
+    font-size: large;
+    margin-bottom: 20px;   
+   color: #ca233f;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .dashboard_Comp {
+      padding: 20px;
+    }
+
+    .greeting {
+        font-weight: bold;
+        font-size: small;
+        
+      }
+      .ButtonsCallsParent {
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .dashboard_Comp {
+        min-height: 84.6vh;
+        overflow-y: hidden;
+      }
+
+      .security-warning h3 {
+        font-size: medium;    
+      }
+    
+      .security-warning li
+      {
+        font-size: smaller;    
+        
+      }
+      
+      .security-warning p {
+        font-size: smaller;  
+    
+      }
+      
+      .ButtonsCalls button {
+        width: auto;
+        padding: 10px;
+        margin-top: 8px;
+        font-size: smaller;
+        border: none;
+        color: white;
+      }
+
+      .BasicInfo .name, .BasicInfo .name span {
+        font-size: small; 
+      }
+  
+    .dashboardActions {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    img
+    {
+      height: 200px;
+    }
+  
+    .addMoneyButton,
+    .transferFundsButton {
+      width: 100%;
+      padding: 15px;
+    }
+    #NameId
+    {
+        display: none;
+    }
+    
+    .footerLinks {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+
+  /* ## ############################################################################################################################################*/
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Transactions Container */
+  .transactions-container {
+    display: flex;
+    max-width: 1920px;
+    align-items: center;
+    justify-content: center;
+    margin-top: -30px;
+    padding: 20px;
+    min-height: 77.4vh;
+  }
+  
+  .loading {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .no-transactions {
+    font-size: 2em;
+    color: red;
+    margin-top: 20px;
+  }
+  .refreshButton {
+    display: flex;
+    justify-content: flex-end;
+    width: 95%;
+  }
+  
+  .pi.pi-refresh {
+    background-color: #00b4d8;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pi.pi-refresh:hover {
+    background-color: #004f7f;
+  }
+  
+  
+  .transactions-list {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 40px; 
+    justify-content: center; 
+    width: 100%;
+    max-width: 1800px; 
+    margin-top: 30px;
+  }
+  
+  /* Individual Transaction Card */
+  .transaction-card {
+    background-color: #f5f3db;
+    border-radius: 4px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    flex: 1 1 380px; 
+    display: flex;
+    flex-direction: column;
+    min-width: 300px; 
+  }
+  
+  .transaction-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .credit-card {
+    border-left: 5px solid green;
+  }
+  
+  .credit-card .transaction-header h3 {
+    color: green;
+  }
+  
+  .debit-card {
+    border-left: 5px solid red;
+  }
+  
+  .debit-card .transaction-header h3 {
+    color: red;
+  }
+  
+  .success-status {
+    background-color: #99ec99;
+    border: 1px solid #99ff99;
+  }
+  
+  .failed-status {
+    background-color: #f5a9a9;
+    border: 1px solid #ff9999;
+  }
+  
+  .transaction-body {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  
+  .transaction-header h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .transaction-body p {
+    margin: 8px 0;
+    font-size: 14px;
+  }
+  
+  .transaction-body p strong {
+    color: #444;
+  }
+  
+  @media (max-width: 768px) {
+    .transactions-list {
+      justify-content: center;
+    }
+  
+    .transaction-card {
+      flex: 1 1 100%;
+      padding: 15px;
+    }
+  }
+
+
+  /* ################################################################################################################################################################ */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  padding: 20px;
+}
+
+.outer-Container
+{
+  min-height: 74.5vh;
+  display: flex;
+  align-items: flex-start;
+}
+
+
+.profile-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile header */
+.profile-header h1 {
+  text-align: center;
+  color: #004f7f;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Profile details */
+.profile-details {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+input ,select{
+  width: 100%;
+  padding: 10px;
+  border-radius:4px;
+  border: 2px solid #ffffff;
+  font-size: 1rem;
+  color: #333;
+}
+textarea
+{
+  width: 120%;
+  height: min-content;
+  border: 1px solid white;
+  padding: 10px;
+  font-size: 1rem;
+  outline: none;
+}
+select
+{
+  border: 1px solid white;
+  outline: none;
+  cursor: pointer;
+
+}
+
+textarea:focus,select:focus
+{
+  border: 2px solid #00b4d8;
+  border-radius: 4px;
+
+
+}
+
+.profile-field {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 4px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+}
+
+.profile-field strong{
+  color: #004f7f;
+  font-weight: bold;
+  font-size: 1em;
+}
+.profile-field span
+{
+  color: #00b4d8;
+  font-size: 1em;
+  font-weight: bold;
+}
+.profileInnerFiled
+{
+  margin-left: 5px;
+}
+
+/* Buttons */
+.profile-actions {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.profile-actions .edit-btn {
+  background-color: #00b4d8;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 0 10px;
+  width: fit-content;
+  transition: background-color 0.3s ease;
+}
+
+.profile-actions  .ButtonsCalls{
+  font-size: 1.2em;
+}
+.profile-actions .edit-btn:hover {
+  background-color: #004f7f;
+}
+
+.profile-actions button:focus {
+  outline: none;
+}
+
+.cancel-btn
+{
+  background-color: #e64b4b;
+    width: fit-content;
+    margin-left: 10px;
+    border-radius: 3px;
+}
+.cancel-btn:hover {
+  background-color: #df6c6c;
+
+}
+
+/* Save Button */
+.save-btn {
+  background-color: #28a745;
+  width: fit-content;
+  border-radius: 3px;
+}
+
+.save-btn:hover {
+  background-color: #4daa61;
+}
+
+/* Edit Button */
+.edit-btn {
+  background-color: #ffc107;
+}
+
+.edit-btn:hover {
+  background-color: #e0a800;
+}
+
+/* Responsive Styles */
+@media (min-width: 600px) {
+  .profile-details {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .profile-container {
+    padding: 15px;
+  }
+
+  .profile-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .profile-field {
+    font-size: 0.9rem;
+    padding: 12px;
+  }
+
+  .profile-details {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 400px) {
+  .profile-container {
+    padding: 10px;
+  }
+
+  .profile-header h1 {
+    font-size: 1.3rem;
+  }
+
+  .profile-field {
+    font-size: 0.85rem;
+    padding: 10px;
+  }
+}
+
+
+/* ### ##########################################################################################################################################*/
+
+/* Contact Container */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: -40px;
+}
+
+/* Banking Details Section */
+.banking-details {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1000px;
+}
+
+.banking-details h2, .banking-details span{
+  margin-bottom: 10px;
+  color: #004f7f;
+  /* font-size: 1.6rem; */
+}
+
+.banking-details p {
+  margin: 10px 0;
+  color: #00b4d8;
+  font-size: 1rem;
+}
+
+.banking-details ul {
+  list-style: none;
+  padding: 0;
+}
+
+.banking-details li {
+  margin-bottom: 8px;
+  color: #004f7f;
+  font-size: 1rem;
+}
+
+/* Complaint Form Section */
+.complaint-form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.complaint-form h3 {
+  color: #004f7f;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
+
+.complaint-form p {
+  color: #00b4d8;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.form-field {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.form-field label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #004f7f;
+}
+
+.complaint-form form {
+  width: 100%;
+}
+
+.form-field input,
+.form-field textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+  background-color: #f9f9f9;
+  text-align: start;
+}
+
+.form-field textarea {
+  height: 15vh;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+  outline: none;
+  border-color: #00b4d8;
+}
+
+.submitButton {
+  background-color: #00b4d8;
+  color: #fff;
+  border: none;
+  width: fit-content;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.submitButton:hover {
+  background-color: #004f7f;
+}
+
+/* Response Message */
+.response-message {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #d9534f;
+}
+
+.response-message.success {
+  color: #5cb85c;
+}
+
+.response-message.error {
+  color: #d9534f;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .complaint-form {
+    max-width: 900px;
+  }
+}
+
+@media (max-width: 992px) {
+  .banking-details {
+    padding: 15px;
+  }
+
+  .complaint-form {
+    padding: 20px;
+  }
+
+  .form-field input,
+  .form-field textarea {
+    font-size: 14px;
+  }
+
+  .submitButton {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 15px;
+  }
+
+  .banking-details,
+  .complaint-form {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .banking-details h2 {
+    font-size: 1.4rem;
+  }
+
+  .complaint-form h3 {
+    font-size: 1.6rem;
+  }
+
+  .form-field input,
+  .form-field textarea {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .submitButton {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+
+  .response-message {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .banking-details h2 {
+    font-size: 1.2rem;
+  }
+
+  .banking-details p,
+  .banking-details li {
+    font-size: 0.9rem;
+  }
+
+  .complaint-form h3 {
+    font-size: 1.4rem;
+  }
+
+  .form-field input,
+  .form-field textarea {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .submitButton {
+    font-size: 14px;
+    padding: 10px 14px;
+  }
+
+  .response-message {
+    font-size: 14px;
+  }
+}
+

@@ -1,0 +1,119 @@
+.services-container {
+    font-family: Arial, sans-serif;
+    padding: 40px 20px;
+    background-color: white;
+    color: #004d7a;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-x: hidden;
+
+}
+
+.services-heading {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.services-heading-div {
+    background: linear-gradient(to right, #004d7a, #00b4d8);
+    width: 100vw;  
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -40px; 
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    column-gap: 100px;
+    row-gap: 50px;
+    justify-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+.service-card {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 350px;
+    cursor: pointer;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.service-card h3 {
+    font-size: 1.9rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 1rem;
+    line-height: 1.4;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.home-button-container {
+    margin-top: 40px;
+}
+
+.home-button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 40px;
+    font-size: 1rem;
+    border: 1px solid #004d7a;
+    border-radius: 5px;
+    color: #004d7a;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.home-button:hover {
+    background-color: #045b8d;
+    transform: translateY(-5px);
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .services-heading {
+        font-size: 2.2rem;
+        margin-bottom: 30px;
+    }
+
+    .service-card h3 {
+        font-size: 1.4rem;
+    }
+
+    .service-card p {
+        font-size: 0.95rem;
+    }
+
+    .home-button {
+        font-size: 0.9rem;
+        padding: 12px 30px;
+    }
+
+    .services-grid {
+        gap: 20px;
+    }
+}

@@ -1,0 +1,227 @@
+/* General styles */
+.outerContainer {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow-y: hidden;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2.1rem;
+    color: #004d7a;
+    margin-bottom: 40px;
+    font-weight: bold;
+  }
+  
+  /* Form container */
+  form {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 40px;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    
+  }
+  
+  /* Styling for the fields */
+  .innerDualContainer {
+    display: flex;
+    justify-content: center;
+    gap: 40px; 
+    margin-bottom: 10px;
+    margin-left: -15px;
+    align-items: center;
+  }
+  
+  .innerContainer {
+    width: 48%; 
+  }
+  
+  .innerContainer label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #004d7a;
+    display: block;
+  }
+  
+  .innerContainer input,
+  .innerContainer textarea,
+  .innerContainer select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    color: #333;
+    margin-top: 5px;
+  }
+  /* .innerContainer input[type='email']
+  {
+    width: 200%;
+    margin-left: -100px;
+  }
+   */
+  .innerContainer input:focus,
+  .innerContainer textarea:focus,
+  .innerContainer select:focus {
+    outline: none;
+    border-color: #00b4d8;
+  }
+  
+  textarea {
+    resize: vertical;
+    height: 120px;
+  }
+  
+  /* Password visibility toggle */
+  .password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #004d7a;
+    font-size: 1.2rem;
+  }
+  input[type="submit"]
+  {
+    margin-top: -70px;
+    background-color: #00b4d8;
+    color: white;
+    padding: 12px 40px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80%;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  /* Submit button */
+  input[type="button"] {
+    background-color: #00b4d8;
+    color: white;
+    padding: 12px 40px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:-40px;
+    font-weight: bold;
+  }
+  
+  input[type="submit"]:hover,
+  input[type="button"]:hover {
+    background-color: #004d7a;
+  
+  }
+  
+  /* OTP and other buttons */
+  input[type="button"] {
+    width: auto;
+    margin-top: 10px;
+  }
+  
+  /* Loading text */
+  p {
+    font-size: 0.9rem;
+    color: #333;
+  }
+
+  .password-toggle {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .input-container {
+    position: relative;
+  }
+
+  input[type="button"]:disabled {
+    background-color: #d3d3d3; 
+    color: #dee7e7;
+    cursor: not-allowed;
+  }
+  
+  input[type="password"] {
+    padding-right: 30px; 
+  }
+
+   .p-toast-icon-close
+  {
+    background-color:transparent ;
+    color: rgb(0, 0, 0);
+  }
+  .p-toast-detail
+  {
+    font-family: Verdana;
+
+  }
+  .p-toast-summary
+  {
+    font-size: 1.2rem;
+  }
+   .p-toast-message-content
+  {
+    display: flex;
+    align-items: center;
+  } 
+  
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    *
+    {
+        font-size: small;
+    }
+    form {
+      padding: 20px;
+    }
+  
+    .innerDualContainer {
+      flex-direction: column;
+      gap: 15px;
+    }
+    .outerContainer{
+        height: 120vh;
+        width: 100%;
+        overflow-x: hidden;
+    }
+  
+    input[type="button"]:disabled {
+        background-color: #d3d3d3; 
+        color: #dee7e7;
+        cursor: not-allowed;
+      }
+      .innerContainer input[type='email']
+  {
+   
+    margin-left: -80px;
+  }
+
+    .innerContainer input,
+    .innerContainer textarea,
+    .innerContainer select {
+      padding: 10px;
+      font-size: small;
+    }
+  
+    input[type="submit"],
+    input[type="button"] {
+      padding: 10px 30px;
+    }
+  }
+  
